@@ -29,6 +29,7 @@ body {
 /* Header */
 header {
   background-color: #255ee9;
+  padding-top: 20px;
 }
 
 .header-row {
@@ -37,7 +38,6 @@ header {
 
 .header-row__col {
   width: 20%;
-  padding-top: 20px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -171,7 +171,7 @@ header {
 .section-detail {
   font-size: 20px;
   margin-top: 40px;
-  line-height: 1.625;
+  line-height: 1.625em;
 }
 
 .section-jumbo__button-wrapper {
@@ -184,4 +184,49 @@ header {
 
 .section-jumbo__button-wrapper .button:last-child {
   margin-right: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #23272a;
+  color: white;
+  padding: 80px 0;
+}
+
+.footer-row {
+  width: 100%;
+  text-align: left;
+}
+
+.footer-row__col {
+  float: left;
+}
+
+.footer-row__col-left {
+  margin-right: 140px;
+}
+
+.footer-row__col-right {
+  float: right;
+}
+
+.footer-motto {
+  color: #7289da;
+  font-size: 31px;
+  font-weight: bold;
+}
+
+.footer-language-dropdown,
+.footer-socials__list-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-socials__list-item {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.footer-socials__list-item-link {
+  font-size: 20px;
 }
