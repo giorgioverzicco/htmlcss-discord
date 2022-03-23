@@ -28,7 +28,7 @@ body {
 
 /* Header */
 header {
-  background-color: #3161e0;
+  background-color: #255ee9;
 }
 
 .header-row {
@@ -37,7 +37,7 @@ header {
 
 .header-row__col {
   width: 20%;
-  padding: 20px 0;
+  padding-top: 20px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -81,8 +81,65 @@ header {
   font-weight: 500;
   background-color: white;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 40px;
   text-decoration: none;
   color: black;
   display: inline-block;
+}
+
+.button--sz-large {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.button--bg-black {
+  background-color: #23272a;
+  color: white;
+}
+
+/* Fontawesome */
+.fa-arrow-down-long {
+  padding-right: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Main */
+.section-jumbo {
+  background-image: url('../img/jumbo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-jumbo__wrapper {
+  max-width: 40%;
+  margin: auto;
+  padding: 150px 0;
+  text-align: center;
+  color: white;
+}
+
+.section-motto {
+  font-size: 56px;
+}
+
+.section-detail {
+  font-size: 20px;
+  margin-top: 40px;
+  line-height: 1.625;
+}
+
+.section-jumbo__button-wrapper {
+  margin-top: 20px;
+}
+
+.section-jumbo__button-wrapper .button {
+  margin-right: 20px;
+}
+
+.section-jumbo__button-wrapper .button:last-child {
+  margin-right: 0;
 }
