@@ -26,37 +26,51 @@ body {
   clear: both;
 }
 
-/* Header */
-header {
-  background-color: #255ee9;
-  padding-top: 20px;
-}
-
-.header-row {
+.header-row,
+.footer-row {
   width: 100%;
 }
 
-.header-row__col {
+.header-row__col,
+.footer-row__col {
   width: 20%;
   display: inline-block;
   vertical-align: middle;
 }
 
-.header-row__col-left {
+.header-row__col-left,
+.footer-row__col-left {
   text-align: left;
 }
 
-.header-logo {
+.header-logo,
+.footer-logo {
   vertical-align: middle;
 }
 
-.header-row__col-middle {
+.header-row__col-middle,
+.footer-row__col-middle {
   width: calc(60% - 8px);
   text-align: center;
 }
 
-.header-row__col-right {
+.header-row__col-right,
+.footer-row__col-right {
   text-align: right;
+}
+
+.header-nav__menu-item-link,
+.footer-socials__list-item-link,
+.footer-nav__menu-item-link,
+.footer-language-dropdown {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+header {
+  background-color: #255ee9;
+  padding-top: 20px;
 }
 
 /* Navigation */
@@ -68,11 +82,6 @@ header {
 .header-nav__menu-item:last-child {
   display: inline-block;
   padding-right: 0;
-}
-
-.header-nav__menu-item-link {
-  text-decoration: none;
-  color: white;
 }
 
 /* Buttons */
@@ -203,30 +212,53 @@ footer {
 }
 
 .footer-row__col-left {
+  width: calc(30% - 140px);
   margin-right: 140px;
 }
 
 .footer-row__col-right {
+  width: 70%;
   float: right;
 }
 
-.footer-motto {
+.footer-motto,
+.footer-nav__menu-title {
   color: #7289da;
-  font-size: 31px;
   font-weight: bold;
 }
 
-.footer-language-dropdown,
-.footer-socials__list-item-link {
-  text-decoration: none;
-  color: inherit;
+.footer-motto {
+  font-size: 31px;
 }
 
 .footer-socials__list-item {
   display: inline-block;
+  padding-top: 10px;
   padding-right: 20px;
 }
 
 .footer-socials__list-item-link {
   font-size: 20px;
+}
+
+.footer-nav {
+  width: calc(100% / 4);
+  float: left;
+  text-align: left;
+}
+
+.footer-nav__menu {
+  list-style-type: none;
+}
+
+.footer-motto,
+.footer-language-dropdown,
+.footer-nav__menu-title,
+.footer-nav__menu-item {
+  padding-bottom: 10px;
+}
+
+.footer-hr {
+  margin: 30px 0;
+  border-color: #7289da;
 }
