@@ -54,12 +54,12 @@ body {
 /* Navigation */
 .header-nav__menu-item {
   display: inline-block;
+  padding-right: 40px;
 }
 
 .header-nav__menu-item-link {
   text-decoration: none;
   color: white;
-  padding-right: 40px;
 }
 
 /* Buttons */
@@ -69,4 +69,5 @@ body {
   border-radius: 20px;
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
