@@ -9,8 +9,64 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Debug */
+.debug {
+  background-color: aquamarine;
+}
+
 /* Common */
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Header */
+.header-row {
+  background-color: #3161e0;
+  width: 100%;
+}
+
+.header-row__col {
+  width: 20%;
+  float: left;
+  margin: 20px 0;
+}
+
+.header-row__col-left {
+  text-align: left;
+}
+
+.header-row__col-middle {
+  width: 60%;
+  text-align: center;
+}
+
+.header-row__col-right {
+  text-align: right;
+}
+
+/* Navigation */
+.header-nav__menu-item {
+  display: inline-block;
+}
+
+.header-nav__menu-item-link {
+  text-decoration: none;
+  color: white;
+  padding-right: 40px;
+}
+
+/* Buttons */
+.button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
 }
