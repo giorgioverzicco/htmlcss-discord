@@ -27,23 +27,31 @@ body {
 }
 
 /* Header */
-.header-row {
+header {
   background-color: #3161e0;
+}
+
+.header-row {
   width: 100%;
 }
 
 .header-row__col {
   width: 20%;
-  float: left;
-  margin: 20px 0;
+  padding: 20px 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .header-row__col-left {
   text-align: left;
 }
 
+.header-logo {
+  vertical-align: middle;
+}
+
 .header-row__col-middle {
-  width: 60%;
+  width: calc(60% - 8px);
   text-align: center;
 }
 
@@ -57,6 +65,11 @@ body {
   padding-right: 40px;
 }
 
+.header-nav__menu-item:last-child {
+  display: inline-block;
+  padding-right: 0;
+}
+
 .header-nav__menu-item-link {
   text-decoration: none;
   color: white;
@@ -64,6 +77,8 @@ body {
 
 /* Buttons */
 .button {
+  font-size: 14px;
+  font-weight: 500;
   background-color: white;
   padding: 10px 15px;
   border-radius: 20px;
