@@ -137,13 +137,24 @@ header {
   text-align: left;
 }
 
-.section-row__col {
+.section-row__col:nth-of-type(even) {
+  float: right;
+}
+
+.section-row__col:nth-of-type(odd) {
   float: left;
 }
 
 .section-row__col-img {
   width: calc(70% - 140px);
-  margin: 0 70px;
+}
+
+.section-row__col-img:nth-of-type(even) {
+  margin-left: 70px;
+}
+
+.section-row__col-img:nth-of-type(odd) {
+  margin-right: 70px;
 }
 
 .section-row__col-text {
